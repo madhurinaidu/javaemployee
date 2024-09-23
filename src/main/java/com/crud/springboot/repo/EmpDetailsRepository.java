@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.crud.springboot.model.EmpDetails;
 @Repository
-public interface EmpDetailsRepository extends JpaRepository<EmpDetails, Long> {
+public interface EmpDetailsRepository extends JpaRepository<EmpDetails, Integer> {
 	EmpDetails findByempNo(int empNo);
 	EmpDetails findByUsername(String username);
 	EmpDetails findByempNoAndUsername(int empid, String username);
