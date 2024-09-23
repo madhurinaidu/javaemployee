@@ -11,7 +11,7 @@ import com.crud.springboot.model.EmpLeaveType;
 import com.crud.springboot.model.InwardDetails;
 import com.crud.springboot.model.LeaveSanctioned;
 @Repository
-public interface LeaveSanctionedRepository extends JpaRepository<LeaveSanctioned,Integer>{
+public interface LeaveSanctionedRepository extends JpaRepository<LeaveSanctioned,String>{
 	List<LeaveSanctioned> findByParent(InwardDetails parent);
 
 
